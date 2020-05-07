@@ -19,6 +19,7 @@ package create
 import (
 	"context"
 	"encoding/base64"
+	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
@@ -30,8 +31,6 @@ import (
 	"k8s.io/klog"
 
 	"go.opentelemetry.io/otel/api/trace"
-	"go.opentelemetry.io/otel/api/core"
-	"go.opentelemetry.io/otel/api/key"
 	"go.opentelemetry.io/otel/exporters/trace/jaeger"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 
@@ -235,7 +234,7 @@ func (o *CreateOptions) Complete(f cmdutil.Factory, cmd *cobra.Command) error {
 // RunCreate performs the creation
 func (o *CreateOptions) RunCreate(f cmdutil.Factory, cmd *cobra.Command) error {
 	provider, flush, err := jaeger.NewExportPipeline(
-		jaeger.WithCollectorEndpoint(endpoint),
+		jaeger.WithCollectorEndpoint(o.JaegerEndpoint),
 		jaeger.WithProcess(jaeger.Process{
 			ServiceName: "oc",
 		}),
