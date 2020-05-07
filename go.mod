@@ -28,8 +28,8 @@ require (
 	github.com/onsi/ginkgo v1.11.0
 	github.com/onsi/gomega v1.7.0
 	github.com/opencontainers/go-digest v1.0.0-rc1 // indirect
-	github.com/openshift/api v3.9.0+incompatible // indirect
-	github.com/openshift/client-go v3.9.0+incompatible
+	github.com/openshift/api v0.0.0-20200429152225-b98a784d8e6d // indirect
+	github.com/openshift/client-go v0.0.0-20200422192633-6f6c07fc2a70
 	github.com/russross/blackfriday v1.5.2
 	github.com/sirupsen/logrus v1.4.2 // indirect
 	github.com/spf13/cobra v0.0.5
