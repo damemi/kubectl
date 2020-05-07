@@ -7,6 +7,7 @@ go 1.13
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
 	github.com/MakeNowJust/heredoc v0.0.0-20170808103936-bb23615498cd
+	github.com/apache/thrift v0.13.0 // indirect
 	github.com/chai2010/gettext-go v0.0.0-20160711120539-c6fed771bfd5
 	github.com/davecgh/go-spew v1.1.1
 	github.com/daviddengcn/go-colortext v0.0.0-20160507010035-511bcaf42ccd
@@ -34,9 +35,11 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.4.0
 	github.com/xlab/handysort v0.0.0-20150421192137-fb3537ed64a1 // indirect
-	go.opentelemetry.io/otel v0.4.3
-	go.opentelemetry.io/otel/exporters/trace/jaeger v0.4.3
+	go.opentelemetry.io/otel v0.2.2
+	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e // indirect
 	golang.org/x/sys v0.0.0-20191022100944-742c48ecaeb7
+	google.golang.org/api v0.15.1 // indirect
+	google.golang.org/grpc v1.26.0 // indirect
 	gopkg.in/yaml.v2 v2.2.8
 	gotest.tools v2.2.0+incompatible // indirect
 	k8s.io/api v0.0.0-20200429122142-1b2a9461f0df
