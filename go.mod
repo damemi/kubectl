@@ -32,6 +32,8 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.4.0
 	github.com/xlab/handysort v0.0.0-20150421192137-fb3537ed64a1 // indirect
+	go.opentelemetry.io/otel v0.4.3
+	go.opentelemetry.io/otel/exporters/trace/jaeger v0.4.3
 	golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd
 	gopkg.in/yaml.v2 v2.2.8
 	k8s.io/api v0.0.0-20200427235940-8d2462157d4e
